@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -12,7 +13,7 @@ export class SearchComponent implements OnInit {
   searchForm!:FormGroup;
   username! : string;
 
-  constructor() { }
+  constructor(private route : Router) { }
 
   ngOnInit(): void {
     this.searchForm = new FormGroup({
@@ -24,8 +25,8 @@ export class SearchComponent implements OnInit {
   }
 
   sendUser(){
-    // console.log(this.searchForm.value);
     this.username = this.searchForm.value.username;
+    this.route.navigate([`user/${this.username}`]);
   }
 
 }
