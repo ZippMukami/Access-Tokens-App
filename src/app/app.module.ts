@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
 import { SearchComponent } from './component/search/search.component';
 import { UserDetailsComponent } from './component/user-details/user-details.component';
+import { HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { UserDetailsComponent } from './component/user-details/user-details.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
