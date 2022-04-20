@@ -21,6 +21,20 @@ export class UserDetailsComponent implements OnInit {
       console.log("params = ", this.username)
     ])
 
+
+    this.githubService.getUser(this.username).subscribe({
+      complete: () => {console.log("successfully done");
+      },
+      error : () => {
+        // back to search page
+        alert("invalid username");
+        this.route.navigate(['search'])
+      },
+      next : () => {
+
+      }
+    })
+
   }
 
 }

@@ -16,7 +16,7 @@ export class GithubService {
     //https://api.github.com/users/username
 
 
-    this.http.get(this.url + username)
+    return this.http.get(this.url + username)
   }
 }
 
