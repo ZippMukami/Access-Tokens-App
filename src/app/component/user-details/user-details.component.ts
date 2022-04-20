@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GithubService } from 'src/app/services/github.service';
 
 @Component({
@@ -9,9 +9,18 @@ import { GithubService } from 'src/app/services/github.service';
 })
 export class UserDetailsComponent implements OnInit {
 
-  constructor(private active : ActivatedRoute, private githubService:GithubService) { }
+  username! : string;
+
+
+  constructor(private active: ActivatedRoute, private githubService: GithubService, private route: Router) { }
 
   ngOnInit(): void {
+
+    this.active.params.subscribe(params =>[
+      this.username = params['id'],
+      console.log("params = ", this.username)
+    ])
+
   }
 
 }
