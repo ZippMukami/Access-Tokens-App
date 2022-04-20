@@ -1,27 +1,67 @@
-# GithubSearch
+# Github search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
-## Development server
+#### Created on 8th April 2022
+#### By Zipporah Mukami Muindi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description 
+The application is a web application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+The Application
+![Preview](./src/assets/Screenshot%20from%202022-04-20%2005-35-58.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Access the website
+Need the latest browser to be able to View
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Follow this link https://zippmukami.github.io/Access-Tokens-App/
 
-## Running end-to-end tests
+It is hosted by github.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+### Setup
+To access this project on your local files, you can clone it using these steps
+1. Open your terminal
+1. Use this command to clone `$ https://github.com/ZippMukami/Access-Tokens-App.git`
+1. This will clone the repositoty into your local folder
+1. Run `ng serve -o` on https://localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## Behaviour Driven Development
+1. The site allows users to seach their github usernames.
+2. Users can see the number of followers.
+3. Users can see their repositories.
+4. Users can see number of people they are following.
+
+
+
+---
+
+## Technologies Used
+HTML
+
+CSS
+
+JAVASCRIPT
+
+BOOTSTRAP
+
+Angular
+
+Git
+
+---
+
+## Contact Details
+zimukami@gmail.com
+
+
+---
+
+### License
+This Project is under the [MIT](LICENCE) license
