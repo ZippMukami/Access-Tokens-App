@@ -10,6 +10,7 @@ import { GithubService } from 'src/app/services/github.service';
 export class UserDetailsComponent implements OnInit {
 
   username! : string;
+  userDetail : any;
 
 
   constructor(private active: ActivatedRoute, private githubService: GithubService, private route: Router) { }
@@ -30,8 +31,10 @@ export class UserDetailsComponent implements OnInit {
         alert("invalid username");
         this.route.navigate(['search'])
       },
-      next : () => {
-
+      next : (data : any = []) => {
+        this.userDetail = data;
+ console.log(this.userDetail);
+ 
       }
     })
 
